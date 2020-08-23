@@ -1,6 +1,8 @@
 # F-List Drag & Drop
 FL Drag & Drop as well as a few other utilities. Written in a mix of Inferno + VanillaJs.
 
+Drag and Drop K's to Custom K's to easy create subK's.  Right Click / Heart-Click to open an edit dialog.  Add and remove as needed.
+
 Hosted at: [GreasyFork](https://greasyfork.org/en/scripts/409850-f-l-drag-drop-1-0)
 
 See info on how to use [GreasyFork](https://greasyfork.org/en) at their main page.
