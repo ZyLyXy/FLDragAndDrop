@@ -76,7 +76,9 @@ export function kinksJsToHtml() {
     let htmlCusts = Q(".CustomKink"); // Handle Deletes. Ignore template (last  one)
     for (let i = 0, I = htmlCusts.length - 1; i < I; i++) {
         let htmlc = htmlCusts[i];
-        if (!cKinkMap[(<HTMLInputElement>htmlc.children[6]).value]) {
+        let id = (<HTMLInputElement>htmlc.children[6]).value;
+        let per = parseInt(id) > 500;
+        if (!cKinkMap[per ? id : "N" + id]) {
             (<btn>htmlc.children[0]).onclick();
         }
     }
