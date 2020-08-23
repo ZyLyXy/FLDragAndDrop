@@ -8,3 +8,14 @@ See info on how to use [GreasyFork](https://greasyfork.org/en) at their main pag
 Or, you can copy and paste the published code in your browser.
 
 (In general, be careful with doing that.  A lot of social engineering attacks have been done from pasting unchecked code.  Feel free to inspect this source and distributed code as needed.  It only makes one web request to save SubFets, honestly.)
+
+# Screenshots
+
+Show UI:
+![1](https://raw.githubusercontent.com/ZyLyXy/FLDragAndDrop/master/pics/showTable.png)
+
+Tables:
+![2](https://raw.githubusercontent.com/ZyLyXy/FLDragAndDrop/master/pics/table.png)
+
+Selects:
+![3](https://raw.githubusercontent.com/ZyLyXy/FLDragAndDrop/master/pics/subSelects.png)
