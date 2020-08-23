@@ -64,7 +64,7 @@ export function kinksJsToHtml() {
         if (id[0] === "_") { // Need to add CustomKink to the page.
             (<btn>ID("customs-button-add")).onclick();
             ch = ID("CustomKinksList").lastElementChild.children as any;
-            cKinkMap[ch[6].value] = kink;
+            cKinkMap["N" + ch[6].value] = kink;
         } else {
             let kn = ID("kinkName" + (id[0] === "N" ? id.substring(1) : id));
             ch = kn.parentElement.children as any;
