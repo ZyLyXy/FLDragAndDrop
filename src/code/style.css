@@ -1,0 +1,315 @@
+.Dialog {
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+}
+.bp {
+    text-align: left;
+    border: 2px solid #0B345F;
+    color: #ccc;
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #134478), color-stop(1, #2468AF));
+    height: 96%;
+    margin-top: calc(2% - 10px);
+    width: 96%;
+    margin-left: calc(2% - 10px);
+    padding: 10px;
+}
+.bp.bp-s1 {
+    height: auto;
+    width: auto;
+    display: inline-block;
+    margin-top: calc(10% - 10px);
+}
+.x-tt {
+    opacity: 1;
+    display: block;
+    width: 280px;
+    z-index: 15007; 
+}
+.bp-s0 > .bp-c {
+    height: calc(96vh - 37px);
+}
+.bp-h {
+    margin-bottom: 10px;
+    text-align: right;
+}
+.bp-hh {
+    margin: 0;
+    float: left;
+}
+.bp-hi{
+    cursor: pointer;
+}
+.bp-c {
+    overflow: auto;
+    padding: 5px;    
+}
+.boxes {
+    text-align: center;
+    outline: 0;
+    height: calc(100% - 250px);
+}
+.box {
+    text-align: center;
+    vertical-align: top;
+    margin: 5px;
+    display: inline-block;
+    max-width: 19%;
+    color: #fff;
+    height: 100%;
+}
+.box > .kinks {
+    cursor: default;
+    padding: 6px 4px 6px 4px;
+    display: inline-block;
+    border: 2px solid #4f94cd;
+    border-radius: 4px;
+    text-align: left;
+    vertical-align: middle;
+    max-height: 100%;
+    overflow: auto;
+    width: 300px;
+    max-width: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #000;
+    overflow-x: hidden;
+}
+.kink {
+    font-size: 13.5px;
+    line-height: 15px;
+    margin-top: -1px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+.subkinks {
+    padding-left: 0;
+    cursor: default;
+}
+.kink:hover {
+    font-weight: bold;
+}
+.fave {
+    background-color: #ccccff;
+}
+.fave:before {
+    content: url(https://static.f-list.net/images/icons/heart.png);
+}
+.yes {
+    background-color: #ccffcc;
+}
+.yes:before {
+    content: url(https://static.f-list.net/images/icons/heart-half.png);
+}
+.maybe {
+    background-color: #ffffcc;
+}
+.maybe:before {
+    content: url(https://static.f-list.net/images/icons/heart-empty.png);
+}
+.no {
+    background-color: #ffcccc;
+}
+.no:before {
+    content: url(https://static.f-list.net/images/icons/minus-circle.png);
+}
+.undecided {
+    background-color: #ffdfcc;
+}
+.undecided:before {
+    content: url(https://static.f-list.net/images/icons/question.png);
+}
+.custom {
+    background-image: url(https://static.f-list.net/images/icons/target.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+}
+.closed {
+    background-image: url(https://static.f-list.net/images/icons/plus-white.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+}
+.open {
+    background-image: url(https://static.f-list.net/images/icons/minus-white.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+}
+.new {
+    background-image: url(https://static.f-list.net/images/icons/new.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+}
+.reg {
+    background-image: url(https://static.f-list.net/images/icons/blue-document-tag.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    font-weight: normal;
+    color: #000;
+}
+.subkinks>.kink {
+    padding-left: 18px;
+    background-position: 18px 0;
+}
+.kink:before {
+    margin-left: 14px;
+}
+.sel {
+    background-color: rgb(30 144 255);
+    color: #fff;
+}
+.drag .sel {
+    background-color: rgb(134 192 249);
+}
+.closed > ul {
+    display: none;
+}
+.x-sel {
+    border-radius: 0 6px 6px 0;
+    height: 27px;
+    width: 40px;
+}
+.x-btn {
+    display: inline-block;
+    padding: 0.4em 1em 0.4em 1em;
+    margin: 10px 0 0 10px;
+    border: 1px solid #04194f;
+    background: #04396f url(https://static.f-list.net/images/jquery/default/ui-bg_highlight-soft_20_04396f_1x100.png) 50% 50% repeat-x;
+    font-weight: normal;
+    color: #ddddee;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.x-btn:hover,
+.x-btn:focus {
+    border: 1px solid #04194f;
+    background: #04396f url(https://static.f-list.net/images/jquery/default/ui-bg_glass_40_04396f_1x400.png) 50% 50% repeat-x;
+}
+.x-btn:active {
+    border: 1px solid #0b244f;
+    background: #bf1213 url(https://static.f-list.net/images/jquery/default/ui-bg_highlight-hard_30_bf1213_1x100.png) 50% 50% repeat-x;
+}
+.x-btn.red {
+    background: -webkit-linear-gradient(top, #e62012 0%, #9a1710 100%);
+}
+.x-btn.red:hover {
+    background: -webkit-linear-gradient(top, #f33729 0%, #cb190f 100%);
+}
+.x-btn.green {
+    background: -webkit-linear-gradient(top, #1fe612 0%, #139a10 100%);
+}
+.x-btn.green:hover {
+    background: -webkit-linear-gradient(top, #2cf329 0%, #2ecb0f 100%);
+}
+.x-btn.x-dis.x-dis {
+    cursor: default;
+    color: #ccc;
+    background: #04396f url(https://static.f-list.net/images/jquery/default/ui-bg_highlight-soft_20_04396f_1x100.png) 50% 50% repeat-x;
+}
+.btn-sm {
+    padding: 0.4em 0.8em 0.4em 0.8em;
+}
+.btn-n, .btn-l {
+    margin: 0;
+}
+.btn-f {
+    border-radius: 6px 0 0 6px;
+}
+.btn-l {
+    border-radius: 0 6px 6px 0;
+}
+.btn-n {
+    border-radius: 0;
+}
+.kinkBtns {
+    text-align: right;
+    margin-bottom: 4px;
+    margin-top: -15px;
+}
+.kinkInf {
+    height: 100%;
+}
+.edt-inp {
+    font-size: 13.67px;
+}
+.edt-inp:disabled,
+.edt-sel:disabled,
+.edt-txt:disabled {
+    background-color: #b1c7dd;
+    border-radius: 5px;
+}
+.edt-inp,
+.edt-sel,
+.edt-txt {
+    opacity: 1;
+    margin-bottom: 4px;
+    width: 99%;
+    color: #000;
+    border: 1px solid rgb(103 136 171);
+}
+.edt-sel {
+    width: calc(99% + 6px);
+}
+.edt-lbl {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    cursor: default;
+}
+.edt-btn {
+    float: right;
+}
+.edt-btns {
+    min-width:350px;
+}
+.Characterdata_FetishChoiceBox {
+    margin-top: -5px;
+    padding: 0;
+}
+.sel-kink-div {
+    position: absolute;
+    right: 0;
+    display: block;
+    margin-top: -2px;
+}
+.sel-kink {
+    border-radius: 5px 0 0 5px;
+    margin-left: 8px;
+    height:15px;
+    font-size:11.33px !important;
+    border: 1px solid #000;
+}
+.sel-kink-x {
+    display: inline-block;
+    padding: 0 3px 2px 1px;
+    vertical-align: top;
+    text-decoration: none !important;
+    height: 11px;
+    margin: 0 0 0 -1px;
+}
+.opt-kink {
+    color: #000;
+}
+.opt-kink:before {
+    content: initial;
+}
+.sel-kink.none {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #07203a;
+}
