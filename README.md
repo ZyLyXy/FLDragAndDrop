@@ -12,7 +12,7 @@ Or, you can copy and paste the published code in your browser.\
 # Screenshots
 Multi-Image upload:
 ![1](https://raw.githubusercontent.com/ZyLyXy/FLDragAndDrop/master/pics/multipleImageUpload.png)
-<sub>CTRL+Click to select multiple files, Shift+Click to select a range.</sub>
+<sub>Drag your mouse to select a bunch of files, or CTRL+Click to select multiple files, or Shift+Click to select a range.</sub>
 
 Show UI:
 ![1](https://raw.githubusercontent.com/ZyLyXy/FLDragAndDrop/master/pics/showTable.png)
