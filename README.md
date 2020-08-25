@@ -1,5 +1,6 @@
 # F-List Drag & Drop
 FL Drag & Drop as well as a few other utilities. Written in a mix of Inferno + VanillaJs.\
+Now with multi-image uploading, so you don't have to select your catalog of pictures one-by-one!\
 Drag and Drop K's to Custom K's to easy create subK's.  Right Click / Heart-Click to open an edit dialog.  Add and remove as needed.\
 Note that your Custom K's must have been already saved once, if you want to add a K to it. So, select options will be blank for new characters.\
 Hosted at: [SleazyFork](https://sleazyfork.org/en/scripts/409850-f-l-drag-drop-1-0) (which is pretty much [GreasyFork](https://greasyfork.org/en)) \
@@ -9,6 +10,9 @@ Or, you can copy and paste the published code in your browser.\
 (Also, I've attempted to stray from crude language as much as possible, at least in the pictures and informational sections.)
 
 # Screenshots
+Multi-Image upload:
+![1](https://raw.githubusercontent.com/ZyLyXy/FLDragAndDrop/master/pics/multipleImageUpload.png)
+<sub>CTRL+Click to select multiple files, Shift+Click to select a range.</sub>
 
 Show UI:
 ![1](https://raw.githubusercontent.com/ZyLyXy/FLDragAndDrop/master/pics/showTable.png)

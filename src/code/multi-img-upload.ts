@@ -1,6 +1,6 @@
 export class MultiImageUpload {
 
-    inject() {
+    static inject() {
         let fileElement = document.getElementsByName("image_file")[0] as HTMLInputElement;
         fileElement.multiple = true;
         let addImageBtn = document.getElementById("addimagebutton") as HTMLInputElement;
@@ -8,12 +8,11 @@ export class MultiImageUpload {
         addImageBtn.value = "Add All Images"
     }
     
-    uploadBatchImages(){
+    static uploadBatchImages(){
         let fileElement = document.getElementsByName("image_file")[0] as HTMLInputElement;
         let fileList = fileElement.files;
         for(var i = 0; i < fileList.length; i++){
             let file = fileList[i];
-            var _this = this;
             setTimeout(function(){
                 MultiImageUpload.originalUploadImage(file);
             }, i * 1000); //1 request per second max
