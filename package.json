@@ -13,6 +13,7 @@
 		"@babel/preset-typescript": "^7.10.4",
 		"@rollup/plugin-alias": "^3.1.1",
 		"babel-plugin-inferno": "^6.1.1",
+		"clipboardy": "^2.3.0",
 		"cssnano": "^4.1.10",
 		"inferno": "^7.4.2",
 		"npm-check-updates": "^7.1.1",
@@ -30,7 +31,9 @@
 		"check": "ncu -u --concurrency=1",
 		"start": "SET WATCH=1&& rollup -c -w",
 		"fbuild": "rollup -c",
-		"build": "SET NODE_ENV=production&& rollup -c"
+		"build": "SET NODE_ENV=production&& rollup -c",
+		"fclip": "SET CLIP=1&& rollup -c",
+		"clip": "SET CLIP=1&& SET NODE_ENV=production&& rollup -c"
 	},
 	"dependencies": {}
 }
