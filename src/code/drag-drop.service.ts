@@ -3,7 +3,6 @@ import { $g } from "./global";
 import { XKink } from "./kink";
 import { Kink, LIKE } from "./model";
 import { AE } from "./util";
-"./api.service";
 
 /** Drop to is either a choice or a CustomKink */
 type DropTo = { c?: LIKE, k?: Kink };

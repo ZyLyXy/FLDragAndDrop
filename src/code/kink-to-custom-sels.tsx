@@ -14,7 +14,8 @@ let jsx: JSX.Element[];
 const FL = (window as any as WindowFList).FList;
 let oldRC = FL.Subfetish.Data.removeCustom;
 FL.Subfetish.Data.removeCustom = function (id: string) {
-    api.removeCustom(api.CustomKinks.b[id]);
+    let fid = parseInt(id) > 500 ? id : "N" + id;
+    api.removeCustom(api.CustomKinks.b[fid]);
     updateSelects();
     oldRC(id);
 }
