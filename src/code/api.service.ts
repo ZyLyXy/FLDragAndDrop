@@ -1,6 +1,7 @@
 import { $g } from "./global";
 import { Kink, LIKE, LIKES, WindowFList } from "./model";
 import { BiMap, BMap, ID, Q, strAt, xhr } from "./util";
+import { MultiImageUpload } from "./multi-img-upload";
 
 // Helper Types
 type idToArrIds = { [key: string]: string[] };
@@ -15,6 +16,7 @@ let CustomToSubsIds: idToArrIds;
 let FL = (window as any as WindowFList).FList;
 let Init = false;
 let DidMoveSubs = false;
+let MultiImgUpload = new MultiImageUpload();
 
 export function compare(kinkA: Kink, kinkB: Kink) {
     let isCustA = kinkA._c, isCustB = kinkB._c;
@@ -238,6 +240,7 @@ export function begin() {
     }
     kinksHtmlToJs();
     applySubFetIdsToFets();
+    MultiImgUpload.inject();
     // Old code to fetch the kinks from the subfetish page.
     // let name = FL.CharacterLists.characterName;
     // xhr("GET", "https://www.f-list.net/experimental/subfetish.php?c=" + encodeURIComponent(name), null, { type: "document" },
